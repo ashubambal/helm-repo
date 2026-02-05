@@ -1,0 +1,12 @@
+apiVersion: v1
+data:
+  myvalue: "hello word"
+  drink: {{ .Values.drink | upper | quote }}
+  food: {{ .Values.food }}
+  env: {{ .Values.env | default "ic-dev" | replace "_" "-" }}
+  time: {{ now | date "2006-01-02 15:04:05" | quote}}
+  region: {{ .Values.region | trim }}
+  replica: {{ len .Values.server }}
+kind: ConfigMap
+metadata:
+  name: {{ required "Name is mandotory" .Values.name }}-configmap

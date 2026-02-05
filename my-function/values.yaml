@@ -1,0 +1,6 @@
+name: template
+drink: coffee
+food: shandwitch
+env: ic_prod
+region: ap-south-1     
+server: [1a,1b,1c]
