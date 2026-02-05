@@ -1,0 +1,7 @@
+users:
+  - name: ashu
+    role: admin-role
+  - name: kallu
+    role: sre-role
+  - name: ram
+    role: operation-role
